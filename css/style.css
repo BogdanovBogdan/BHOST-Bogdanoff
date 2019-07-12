@@ -8,7 +8,7 @@ img{
 	height: auto;
 }
 section{
-	padding: 120px 0;
+	padding: 100px 0;
 }
 h3{
 	font-size: 30px;
@@ -23,7 +23,6 @@ h2{
 h1{
 	font-size: 17px;
 	text-transform: uppercase;
-	margin-bottom: 15px;
 	font-weight: 700;
 }
 p{
@@ -46,10 +45,46 @@ p{
 	position: relative;
 	color: #fff;
 }
+./* main-header .navbar-light{
+	color: #fff;
+} */
+.main-header .active a{
+	color: #02AEEE;
+}
 .main-header ul li a{
 	color: #fff;
 	font-size: 14px;
+	text-transform: uppercase;
+	margin-left: 40px;
+	position: relative;
+	display: inline-block;
 }
+.main-header ul li a:after{
+	display: block;
+	content: '';
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+	height: 1px;
+	width: 0%;
+	background-color: #fff;
+	transition: width .4s;
+}
+.main-header ul li a:hover:after{
+	width: 100%;
+}
+/* .main-header ul li a::after{
+	content: '';
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	height: 1px;
+	transform: scale(0);
+	transition: all .3s;
+}
+.main-header ul li a:hover::after{
+	transform: scale(1);	
+} */
 .main-header img{
 	height: 47px;
 	width: auto;	
@@ -80,12 +115,39 @@ p{
 }
 .main-header .btn{
 	background-color: #00aeef;
+	box-shadow: 0px 5px 25px -10px rgba(0,0,0,.5);
 	font-size: 13px;
 	width: 135px;
 	height: 50px;
 	margin-top: 50px;
-	box-shadow: 0px 5px 20px rgba(0,0,0,.5);
+	border: none;
+	transition: all .15s;
 }
 .main-header .btn:hover{
-	box-shadow: inset 0px 0px 1px rgba(0,0,0,.5);
+	box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+	background: linear-gradient(-45deg, #42ACDC, #A547C3);
+}
+
+
+/* ============================== .section-experenced ============================== */
+
+.section-experenced h2{
+	text-transform: uppercase;
+}
+.section-experenced p{
+	font-size: 15px;
+	line-height: 1.8;
+}
+.section-experenced .col-9 p{
+	text-align: center;
+}
+.section-experenced h1{
+	padding: 5px 0;
+	margin-bottom: 0px;
+}
+.section-experenced .column1{
+	max-width: 190px;
+}
+.section-experenced .column2{
+	max-width: 210px;
 }
