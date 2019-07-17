@@ -36,7 +36,6 @@ h1{
 p{
 	font-size: 14px;
 	font-weight: 400;
-	margin-bottom: 30px;
 }
 .btn{
 	text-transform: uppercase;
@@ -115,6 +114,10 @@ p{
 	min-width: 90px;
 	padding: 35px 0;
 }
+.main-header i{
+	font-weight: 400;
+	font-family: FontAwesome;
+}
 .main-header .btn{
 	background-color: #00aeef;
 	box-shadow: 0px 5px 25px -10px rgba(0,0,0,.5);
@@ -139,6 +142,7 @@ p{
 .section-experenced p{
 	font-size: 15px;
 	line-height: 1.8;
+	margin-bottom: 30px;
 }
 .section-experenced .col-9 p{
 	text-align: center;
@@ -291,6 +295,34 @@ p{
 }
 
 
+/* ============================== .section-advantages ============================== */
+
+.section-advantages{
+	background: #f9f9f9;
+}
+.section-advantages i{
+	font-size: 60px;
+	font-family: FontAwesome;
+	font-weight: 400;
+	margin-top: 22px;
+	margin-bottom: 30px;
+	background: -webkit-linear-gradient(top right, #9241c3, #33a8e2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+} 
+.section-advantages h1{
+	font-weight: 600;
+}
+.section-advantages .item{
+	margin-top: 80px;
+	position: relative;
+	border-left: 1px dotted #7dd6f7;
+}
+.section-advantages .item:first-child{
+	border-left: none;
+}
+
+
 /* ============================== Media query ============================== */
 
 /* Large Devices, Wide screens */
@@ -309,7 +341,7 @@ p{
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.main-header-text h4 {
 		font-size: 28px;
 	}
@@ -318,6 +350,9 @@ p{
 	}
 	.section-plan .ellips{
 		left: 50px;
+	}
+	.section-advantages .item3{
+		border-left: none;
 	}
 }
 @media only screen and (max-width: 724px) {
@@ -352,6 +387,11 @@ p{
 	.section-plan .ellips{
 		left: 110px;
 	}
+	.section-advantages .item{
+		margin-top: 40px;
+		border-left: none;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
