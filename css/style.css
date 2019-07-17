@@ -1,3 +1,11 @@
+/* 
+light      - 300
+regular    - 400
+semi-bold  - 600
+bold       - 700
+extra-bold - 800
+*/
+
 body{
 	font-family: 'Open Sans', sans-serif;
 	min-width: 320px;
@@ -189,14 +197,15 @@ p{
 	font-size: 15px;
 	font-weight: 600;
 	border: none;
+	border-radius: 20px;
 	top: 7px;
 	right: 15px;
 	height: 40px;
 	width: 130px;
 	background: linear-gradient(to top right,rgb(49, 170, 226) 35.4%,rgb(157, 53, 192) 76.2%);
 }
-.section-search .btn{
-	border-radius: 20px;
+.section-search .form-inline button:focus{
+	box-shadow: 0 0 0 3px rgba(165, 71, 195, .5);
 }
 .section-search .form-check{
 	margin: 34px 25px 0 25px;
@@ -244,6 +253,43 @@ p{
 }
 
 
+/* ============================== section-plan ============================== */
+
+.section-plan h3{
+	font-weight: 600;
+}
+.section-plan .title{
+	max-width: 700px;
+}
+.section-plan .step{
+	max-width: 300px;
+	position: relative;
+	margin-top: 170px;
+}
+.section-plan .ellips{
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	top: -110px;
+	left: 115px;
+	border: 1px dotted #7dd6f7;
+	border-radius: 40px;
+	background: #fff;
+}
+.section-plan .ellips p{
+	margin: 0;
+	transform: translate(0, 40%);
+	color: #00aeef;
+	font-family: Roboto Slab;
+	font-size: 24px;
+}
+.section-plan .ellips:hover{
+	background-image: linear-gradient(to top right,rgb(69, 148, 220) 36%,rgb(140, 71, 197) 71.9%);
+}
+.section-plan .ellips:hover p{
+	color: #fff;
+}
+
 
 /* ============================== Media query ============================== */
 
@@ -257,7 +303,9 @@ p{
 		font-size: 34px;
 		margin-top: 100px;
 	}
-	
+	.section-plan .ellips{
+		left: 80px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -267,6 +315,9 @@ p{
 	}
 	.section-search .form-control {
 		padding-right: 32%; 
+	}
+	.section-plan .ellips{
+		left: 110px;
 	}
 }
 @media only screen and (max-width: 724px) {
