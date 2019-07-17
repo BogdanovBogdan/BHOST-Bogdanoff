@@ -317,7 +317,7 @@ p{
 		padding-right: 32%; 
 	}
 	.section-plan .ellips{
-		left: 110px;
+		left: 50px;
 	}
 }
 @media only screen and (max-width: 724px) {
@@ -345,6 +345,12 @@ p{
 	.section-search i {
 		left: 15px;
 		top: 10px;
+	}
+	.section-plan .step{
+		margin-top: 140px;
+	}
+	.section-plan .ellips{
+		left: 110px;
 	}
 }
 
