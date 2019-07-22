@@ -27,6 +27,7 @@ h2{
 	font-size: 24px;
 	margin-bottom: 30px;
 	font-weight: 600;
+	text-transform: uppercase;
 }
 h1{
 	font-size: 17px;
@@ -40,6 +41,11 @@ p{
 .btn{
 	text-transform: uppercase;
 	font-weight: 600;
+}
+.head-paragraph{
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* ============================== HEAD ============================== */
@@ -122,6 +128,7 @@ p{
 	background-color: #00aeef;
 	box-shadow: 0px 5px 25px -10px rgba(0,0,0,.5);
 	font-size: 13px;
+	font-weight: 600;
 	width: 135px;
 	height: 50px;
 	margin-top: 50px;
@@ -162,7 +169,8 @@ p{
 /* ============================== section-search ============================== */
 
 .section-search{
-	background: url(../img/section-search/back.png);
+	background: url(../img/section-search.back.png) center no-repeat;
+	background-size: cover;
 	color: #fff;
 }
 .section-search h3{
@@ -262,9 +270,6 @@ p{
 .section-plan h3{
 	font-weight: 600;
 }
-.section-plan .title{
-	max-width: 700px;
-}
 .section-plan .step{
 	max-width: 300px;
 	position: relative;
@@ -323,14 +328,130 @@ p{
 }
 
 
+/* ============================== section-packages ============================== */
+
+.section-packages{
+	padding-bottom: 170px;
+}
+.section-packages .image-devices{
+	padding-left: 50px; 
+	display: flex;
+	align-items: center;
+}
+.section-packages .cloud i{
+	font-size: 100px;
+	background: -webkit-linear-gradient(top right, #9241c3, #33a8e2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	position: relative;
+}
+.section-packages .cloud p{
+	font-size: 40px;
+	color: #fff;
+	font-weight: 700;
+	position: absolute;
+	bottom: 0px;
+	left: 40px;
+}
+.section-packages .btn{
+	font-size: 15px;
+	font-weight: 400;
+	margin-top: 29px;
+	height: 45px;
+	width: 148px;
+	background: none;
+	border: 1px solid #00aeef;
+	color: #00aeef;
+}
+.section-packages .btn:hover{
+	box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+	background: linear-gradient(-45deg, #42ACDC, #A547C3);
+	color: #fff;
+	border: none;
+	transition: 
+}
+.section-packages .carousel-control-prev,
+.section-packages .carousel-control-next{
+	max-width: 100px;
+}
+.section-packages .carousel-control-prev i,
+.section-packages .carousel-control-next i{
+	font-size: 20px;
+	color: #00aeef;
+}
+.section-packages .carousel-indicators{
+	right: 65%;
+	bottom: -35%;
+}
+.section-packages .carousel-indicators li {
+	width: 14px;
+	height: 14px;
+	margin-right: 5px;
+	margin-left: 5px;
+	background-color: #fff;
+	border: 2px solid #00aeef;
+	opacity: 1;
+}
+.section-packages .carousel-indicators li:hover{
+	background: rgb(0, 174, 239, .5);;
+}
+.section-packages .carousel-indicators .active{
+	background: #00aeef;
+	pointer-events: none;
+}
+.section-packages ul{
+	list-style: none;
+	padding-left: 50px;
+}
+.section-packages li{
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+.section-packages li:before{
+	content: "\f00c";
+	font-family: FontAwesome;
+	font-size: 15px;
+	color: #d9d9d9;
+	margin-right: 10px; 
+}
+.section-packages .change-padding{
+	padding: 0px;
+}
+.section-packages .two-column{
+	padding-left: 10px;
+}
+ 
+
 /* ============================== Media query ============================== */
 
 /* Large Devices, Wide screens */
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 1199px) {
+	.section-packages .carousel-indicators{
+		right: 55%;
+	}
 }
+
 
 /* Medium Devices, Desctops */
 @media only screen and (max-width: 991px) {
+	.section-packages .carousel-indicators{
+		right: 50%;
+	}
+	.section-packages .cloud p{
+		font-size: 35px;
+		bottom: -3px;
+		left: 38px;
+	}
+	.section-packages .cloud i{
+		font-size: 90px;
+	}
+	.section-packages ul{
+		list-style: none;
+		padding-left: 60px;
+	}
+	.section-packages .main-part{
+		padding: 0;
+	}
 	.main-header-text h4 {
 		font-size: 34px;
 		margin-top: 100px;
@@ -342,6 +463,12 @@ p{
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+	.section-packages .carousel-indicators{
+		right: 45%;
+	}
+	.section-packages .image-devices{
+		display: none;
+	}
 	.main-header-text h4 {
 		font-size: 28px;
 	}
@@ -360,6 +487,16 @@ p{
 @media only screen and (max-width: 600px) {
 }
 @media only screen and (max-width: 575px) {
+	.section-packages .carousel-indicators{
+		right: 45%;
+		bottom: -25%;
+	}
+	.section-packages .main-part{
+		padding: 0 60px;
+	}
+	.section-packages ul{
+		padding-left: 0px;
+	}
 	.section{
 		padding: 50px 0px;
 	}
@@ -378,8 +515,8 @@ p{
 		right: 8px;
 	}
 	.section-search i {
-		left: 15px;
-		top: 10px;
+		left: 25px;
+		top: 20px;
 	}
 	.section-plan .step{
 		margin-top: 140px;
@@ -395,12 +532,39 @@ p{
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 491px) {
+@media only screen and (max-width: 495px) {
+	.section-packages .cloud p{
+		font-size: 30px;
+		bottom: -4px;
+		left: 37px;
+	}
+	.section-packages .cloud i{
+		font-size: 80px;
+	}
+	.section-packages li{
+		font-size: 13px;
+	}
 	.section-search .form-control {
 		padding-right: 38%; 
 	}
 }
 @media only screen and (max-width: 461px) {
+	.section-packages .carousel-indicators{
+		right: 35%;
+		bottom: -20%;
+	}
+	.section-packages .btn{
+		font-size: 12px;
+		height: 35px;
+		width: 130px;
+	}
+	.section-packages h2{
+		font-size: 20px;
+	}
+	.section-search i {
+		left: 15px;
+		top: 10px;
+	}
 	.section-search .form-control {
 		height: 36px;
 		padding: 8px 105px 8px 45px;
@@ -422,6 +586,10 @@ p{
 }
 
 @media only screen and (max-width: 380px) {
+	.section-packages .carousel-indicators{
+		right: 25%;
+		bottom: -15%;
+	}
 }
 
 @media only screen and (max-width: 337px) {
