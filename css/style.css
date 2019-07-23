@@ -422,10 +422,35 @@ p{
 }
  
 
+/* ============================== .section-web-builder ============================== */
+
+/* .section-web-builder .container{
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	width: 100%;
+} */
+.section-web-builder .right-part{
+	background-image: linear-gradient(to top right,rgb(69, 148, 220) 36%,rgb(140, 71, 197) 71.9%);
+	color: #fff;
+	padding: 80px 130px;
+}
+.section-web-builder .left-part{
+	background: url(../img/section-web-building.png) center no-repeat; 
+	background-size: cover;
+}
+.section-web-builder h3{
+	text-transform: uppercase;
+}
+
+
 /* ============================== Media query ============================== */
 
 /* Large Devices, Wide screens */
 @media only screen and (max-width: 1199px) {
+	.section-web-builder .right-part{
+		padding: 40px 70px;
+	}
 	.section-packages .carousel-indicators{
 		right: 55%;
 	}
@@ -434,6 +459,9 @@ p{
 
 /* Medium Devices, Desctops */
 @media only screen and (max-width: 991px) {
+	.section-web-builder .right-part{
+		padding: 30px 60px;
+	}
 	.section-packages .carousel-indicators{
 		right: 50%;
 	}
@@ -487,6 +515,9 @@ p{
 @media only screen and (max-width: 600px) {
 }
 @media only screen and (max-width: 575px) {
+	.section-packages{
+		padding: 50px 0 100px 0;
+	}
 	.section-packages .carousel-indicators{
 		right: 45%;
 		bottom: -25%;
