@@ -486,6 +486,7 @@ p{
 
 .section-facts{
 	background: url(../img/section-facts.background.png) no-repeat center;
+	background-size: cover;
 	color: #fff;
 	padding: 110px 0;
 }
@@ -498,7 +499,7 @@ p{
 	font-size: 24px;
 	font-weight: 600;
 	text-transform: uppercase;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 .section-facts .cloud{
 	font-size: 70px;
@@ -512,13 +513,16 @@ p{
 .section-facts .inside-cloud{
 	position: absolute;
 	width: 50px;
-	border: 1px solid #000;
 	text-align: center;
 	font-size: 30px;
 	color: #00aeef;
-	
 	bottom: 15px;
-	left: 17px;
+	left: 18px;
+}
+.section-facts .row{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -566,9 +570,26 @@ p{
 		left: 80px;
 	}
 }
+@media only screen and (max-width: 800px){
+	.section-facts h2{
+		font-size: 35px;
+	} 
+	.section-facts p{
+		font-size: 22px;
+	}
+}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+	.section-facts{
+		padding-bottom: 60px;
+	}
+	.section-facts h2{
+		margin: 20px 0 10px 0;
+	}
+	.section-facts p{
+		margin-bottom: 50px;
+	}
 	.section-parameters a{
 		font-size: 12px;
 	}
@@ -610,6 +631,9 @@ p{
 @media only screen and (max-width: 600px) {
 }
 @media only screen and (max-width: 575px) {
+	.section-facts{
+		padding-top: 60px;
+	}
 	.section-packages{
 		padding: 50px 0 100px 0;
 	}
@@ -658,6 +682,12 @@ p{
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 495px) {
+	.section-facts h2{
+		font-size: 28px;
+	} 
+	.section-facts p{
+		font-size: 18px;
+	}
 	.section-packages .cloud p{
 		font-size: 30px;
 		bottom: -9px;
