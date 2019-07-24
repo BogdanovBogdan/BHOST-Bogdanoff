@@ -12,7 +12,7 @@ body{
 	color: #000;
 }
 img{
-	max-width: 100%
+	max-width: 100%;
 	height: auto;
 }
 section{
@@ -22,6 +22,7 @@ h3{
 	font-size: 30px;
 	margin-bottom: 30px;
 	font-weight: 700;
+	text-transform: uppercase;
 }
 h2{
 	font-size: 24px;
@@ -37,6 +38,7 @@ h1{
 p{
 	font-size: 14px;
 	font-weight: 400;
+	margin-bottom: 20px;
 }
 .btn{
 	text-transform: uppercase;
@@ -172,9 +174,6 @@ p{
 	background: url(../img/section-search.back.png) center no-repeat;
 	background-size: cover;
 	color: #fff;
-}
-.section-search h3{
-	text-transform: uppercase;
 }
 .section-search p{
 	font-size: 16px;
@@ -350,7 +349,7 @@ p{
 	color: #fff;
 	font-weight: 700;
 	position: absolute;
-	bottom: 0px;
+	bottom: -7px;
 	left: 40px;
 }
 .section-packages .btn{
@@ -424,12 +423,6 @@ p{
 
 /* ============================== .section-web-builder ============================== */
 
-/* .section-web-builder .container{
-	margin-left: 0px;
-	margin-right: 0px;
-	padding: 0px;
-	width: 100%;
-} */
 .section-web-builder .right-part{
 	background-image: linear-gradient(to top right,rgb(69, 148, 220) 36%,rgb(140, 71, 197) 71.9%);
 	color: #fff;
@@ -439,9 +432,95 @@ p{
 	background: url(../img/section-web-building.png) center no-repeat; 
 	background-size: cover;
 }
-.section-web-builder h3{
-	text-transform: uppercase;
+
+
+/* ============================== .section-parameters ============================== */
+
+.section-parameters{
+	color: #333;
 }
+.section-parameters a{
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #333;
+}
+.section-parameters h2{
+	font-size: 20px;
+	text-transform: none;
+}
+.section-parameters h3{
+	margin-bottom: 60px;
+}
+.section-parameters .image-align{
+	display: flex;
+	align-items: center;
+}
+.section-parameters .image-align img{
+	width: 100%;
+}
+.section-parameters .nav-item{
+	width: 170px;
+	height: 60px;
+	background-color: #f9f9f9;
+	margin-top: 15px;
+	margin-right: 1px;
+}
+.section-parameters .nav-item:hover{
+	background-color: #e7e7e7;
+}
+.section-parameters .nav-link{
+	width: 170px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section-parameters ul .active{
+	background: linear-gradient(45deg, #31aae2, #9d35c0);
+	border-radius: 3px;
+}
+
+
+/* ============================== .section-facts ============================== */
+
+.section-facts{
+	background: url(../img/section-facts.background.png) no-repeat center;
+	color: #fff;
+	padding: 110px 0;
+}
+.section-facts h2{
+	font-size: 40px;
+	margin-bottom: 30px;
+	margin-top: 35px
+} 
+.section-facts p{
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+}
+.section-facts .cloud{
+	font-size: 70px;
+	color: #fff;
+}
+.section-facts .pos{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.section-facts .inside-cloud{
+	position: absolute;
+	width: 50px;
+	border: 1px solid #000;
+	text-align: center;
+	font-size: 30px;
+	color: #00aeef;
+	
+	bottom: 15px;
+	left: 17px;
+}
+
 
 
 /* ============================== Media query ============================== */
@@ -456,7 +535,6 @@ p{
 	}
 }
 
-
 /* Medium Devices, Desctops */
 @media only screen and (max-width: 991px) {
 	.section-web-builder .right-part{
@@ -467,7 +545,7 @@ p{
 	}
 	.section-packages .cloud p{
 		font-size: 35px;
-		bottom: -3px;
+		bottom: -8px;
 		left: 38px;
 	}
 	.section-packages .cloud i{
@@ -491,6 +569,17 @@ p{
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+	.section-parameters a{
+		font-size: 12px;
+	}
+	.section-parameters .nav-item,
+	.section-parameters .nav-link{
+		width: 110px;
+		height: 30px;
+	}
+	.section-parameters .image-align{
+		display: none;
+	}
 	.section-packages .carousel-indicators{
 		right: 45%;
 	}
@@ -508,6 +597,12 @@ p{
 	}
 	.section-advantages .item3{
 		border-left: none;
+	}
+	h3{
+		font-size: 24px;
+	}
+	h2{
+		font-size: 20px
 	}
 }
 @media only screen and (max-width: 724px) {
@@ -559,14 +654,13 @@ p{
 		margin-top: 40px;
 		border-left: none;
 	}
-
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 495px) {
 	.section-packages .cloud p{
 		font-size: 30px;
-		bottom: -4px;
+		bottom: -9px;
 		left: 37px;
 	}
 	.section-packages .cloud i{
@@ -609,20 +703,23 @@ p{
 		width: 100px;
 	}
 }
-
 @media only screen and (max-width: 442px) {
 }
-
 @media only screen and (max-width: 428px) {
 }
-
 @media only screen and (max-width: 380px) {
+	.section-parameters a{
+		font-size: 11px;
+	}
+	.section-parameters .nav-item,
+	.section-parameters .nav-link{
+		width: 95px;
+		height: 30px;
+	}
 	.section-packages .carousel-indicators{
 		right: 25%;
 		bottom: -15%;
 	}
 }
-
-@media only screen and (max-width: 337px) {
-	
+@media only screen and (max-width: 337px) {	
 }
