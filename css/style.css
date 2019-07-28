@@ -367,7 +367,6 @@ p{
 	background: linear-gradient(-45deg, #42ACDC, #A547C3);
 	color: #fff;
 	border: none;
-	transition: 
 }
 .section-packages .carousel-control-prev,
 .section-packages .carousel-control-next{
@@ -526,6 +525,136 @@ p{
 }
 
 
+/* ============================== .section-post ============================== */
+
+.section-post{
+	background: #f9f9f9;	
+}
+.section-post .date h2{
+	font-size: 14px;
+	margin: 0;
+}
+.section-post .p1{
+	font-size: 15px;
+	color: #898989;
+	margin-bottom: 13px;
+}
+.section-post .p2{
+	font-size: 14px;
+	color: #616161;
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+.section-post h2{
+	font-size: 16px;
+	margin-top: 18px;
+}
+.section-post .btn{
+	font-size: 14px;
+	background-color: #f9f9f9;
+	color: #00aeef;
+	border: none;
+	float: left;
+	position: relative;
+}
+.section-post a{
+	text-decoration: none;
+}
+.section-post i{
+	font-size: 14px;
+}
+.section-post .img-box{
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+.section-post img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.section-post .date{
+	width: 70px;
+	height: 35px;
+	color: #fff;
+	background: #00aeef;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+}
+.section-post .card-body{
+	padding: 30px 20px 25px 20px;
+} 
+.section-post .links{
+	float: right;
+}
+.section-post .link-share,
+.section-post .link-comment{
+	color: #333333;
+	width: 30px;
+	height: 30px;
+	background-color: #f9f9f9;
+	margin-left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section-post .links .link-comment{
+	float: left;
+}
+.section-post .links .link-share{
+	float: right;
+}
+.section-post .link-comment{
+	width: 54px;
+}
+.section-post .btn:before{
+	content: 'read more';
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	border-radius: 3px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, #42ACDC, #A547C3);
+	opacity: 0;
+	transition: .5s;
+}
+.section-post .card:hover .btn:before{
+	opacity: 1;
+}
+.section-post .date:before{
+	content: '6 NOV';
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, #42ACDC, #A547C3);
+	opacity: 0;
+	transition: 0.5s;
+}
+.section-post .card:hover .date:before{
+	opacity: 1;
+}
+
+
+
 
 /* ============================== Media query ============================== */
 
@@ -541,6 +670,16 @@ p{
 
 /* Medium Devices, Desctops */
 @media only screen and (max-width: 991px) {
+	.section-post .links{
+		float: left;
+		margin-top: 10px;
+	}
+	.section-post .link-comment{
+		margin-left: 0;
+	}
+	.section-post .link-share{
+		margin-left: 10px;
+	}
 	.section-web-builder .right-part{
 		padding: 30px 60px;
 	}
@@ -631,6 +770,17 @@ p{
 @media only screen and (max-width: 600px) {
 }
 @media only screen and (max-width: 575px) {
+	.section-post .links{
+		float: right;
+		margin-top: 0px;
+	}
+	.section-post .link-comment{
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	.section-post .link-share{
+		margin-left: 0px;
+	}
 	.section-facts{
 		padding-top: 60px;
 	}
